@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const dotEnv = require('dotenv').config();
 const app = require('./app');
 
+
 // Database connection
 mongoose.connect(process.env.DATABASE).then(() => {
     console.log("database connected");
