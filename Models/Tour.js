@@ -23,7 +23,7 @@ const tourSchema = mongoose.Schema({
     },
     viewCount: {
         required: true,
-        type: String
+        type: Number
     }
 }, {
     timestamps: true
