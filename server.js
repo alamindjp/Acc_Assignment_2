@@ -3,7 +3,7 @@ const dotEnv = require('dotenv').config();
 const app = require('./app');
 
 // Database connection
-mongoose.connect("mongodb+srv://tour_manage:QmqHIIvBJiaqQlce@acc2.v7old1z.mongodb.net/?retryWrites=true&w=majority").then(() => {
+mongoose.connect(process.env.DATABASE).then(() => {
     console.log("database connected");
 });
 
